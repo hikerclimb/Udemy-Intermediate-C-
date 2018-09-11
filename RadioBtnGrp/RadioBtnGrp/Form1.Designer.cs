@@ -44,6 +44,7 @@
             this.pbCanada = new System.Windows.Forms.PictureBox();
             this.pbItaly = new System.Windows.Forms.PictureBox();
             this.pbUK = new System.Windows.Forms.PictureBox();
+            this.btnExit = new System.Windows.Forms.Button();
             this.grpWeather.SuspendLayout();
             this.grpCountry.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRain)).BeginInit();
@@ -227,11 +228,22 @@
             this.pbUK.TabStop = false;
             this.pbUK.Visible = false;
             // 
+            // btnExit
+            // 
+            this.btnExit.Location = new System.Drawing.Point(150, 254);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(75, 23);
+            this.btnExit.TabIndex = 9;
+            this.btnExit.Text = "Exit";
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(422, 261);
+            this.ClientSize = new System.Drawing.Size(422, 289);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pbUK);
             this.Controls.Add(this.pbItaly);
             this.Controls.Add(this.pbCanada);
@@ -275,6 +287,7 @@
         private System.Windows.Forms.PictureBox pbCanada;
         private System.Windows.Forms.PictureBox pbItaly;
         private System.Windows.Forms.PictureBox pbUK;
+        private System.Windows.Forms.Button btnExit;
     }
 }
 
